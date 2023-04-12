@@ -1,0 +1,31 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link href="style.css" rel="stylesheet">
+      <title>LOGIN</title>
+    </head>
+    <body>
+        
+
+        <a id="voltar" href="../index.html"><img src="..//imgs/back.png"></a>
+        <form id="cadastro" class="animation-login">
+            <p id="titulo">Criar Conta</p>
+            <input type="text" id="nome" class="inputs nome" placeholder="Nome" data-min-lenght="3">
+            <input type="text" class="inputs email" id="email" placeholder="Email">
+            <input id="senha" type="password" class="inputs senha" placeholder="Senha">
+            <input type="button" onclick="validarSenha()" id="btn-submit" class="btn-criar-conta" value="Criar Conta">
+            <label class="check">
+                <input class="mostrar" type="checkbox" onclick="mostrarSenha()">
+                <div id="olho"></div> 
+            </label>
+            <p class="privacidade">Ao clicar no botão de criar conta <br> são aceitos os <a href="#">termos de privacidade</a></p>
+            <p id="erro-msg" class = "erro"></p>
+            <p id="erro-msg-email" class = "erro-email"></p>
+            <p id="erro-msg-nome" class="erro-nome"></p>
+            <p id="correto" class = "create"></p>
+        </form>
+        <div class="over"></div>
+        <img src="../imgs/banner.jpg" id="background">
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
